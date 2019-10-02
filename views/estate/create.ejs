@@ -1,0 +1,32 @@
+<!--create.ejs-->
+<form action="/estate/create" method="POST">
+    <div class="form-group">
+        <label>Property title:</label>
+        <input type="text" class="form-control" name="RealEstate[title]" required>
+    </div>
+    <div class="form-group">
+        <label>Estate:</label>
+        <input type="text" class="form-control" name="RealEstate[estate]" required>
+    </div>
+    <div class="form-group">
+        <label>Gross Area:</label>
+        <input type="number" class="form-control" name="RealEstate[area]" required>
+    </div>
+    <div class="form-group">
+        <label>Rent:</label>
+        <input type="number" class="form-control" name="RealEstate[rent]" required>
+    </div>
+    <div class="form-group">
+        <label>Image URL:</label>
+        <input type="text" class="form-control" name="RealEstate[url]" required>
+    </div>
+    <div class="form-group">
+        <label>Bedrooms:</label>
+        <input type="number" class="form-control" name="RealEstate[bedroom]" required>
+    </div>
+    <div class="form-group">
+        <label>Expect Tenants:</label>
+        <input type="number" class="form-control" name="RealEstate[tenant]" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

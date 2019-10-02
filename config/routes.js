@@ -19,7 +19,13 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { view: 'pages/homepage' },
+  // '/': { view: 'pages/homepage' },
+
+  '/' : 'RealEstateController.index',
+
+  'GET /estate/create' : 'RealEstateController.create',
+  'POST /estate/create' : 'RealEstateController.create',
+  
 
 
   /***************************************************************************
