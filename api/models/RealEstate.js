@@ -41,6 +41,10 @@ module.exports = {
       type: "number"
     },
 
+    checkbox: {
+      type: "string"
+    },
+
 
 
 

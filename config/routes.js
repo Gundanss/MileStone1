@@ -21,10 +21,13 @@ module.exports.routes = {
 
   // '/': { view: 'pages/homepage' },
 
-  '/' : 'RealEstateController.index',
+  '/' : 'RealEstateController.home',
 
   'GET /estate/create' : 'RealEstateController.create',
   'POST /estate/create' : 'RealEstateController.create',
+
+  'GET /estate/home' : 'RealEstateController.home',
+  'POST /estate/home' : 'RealEstateController.home',
   
 
 

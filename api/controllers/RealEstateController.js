@@ -18,7 +18,18 @@ module.exports = {
 
         await RealEstate.create(req.body.RealEstate); //?
 
-        return res.ok("Successfully created!");
+        return res.view('estate/create');
+    },
+
+    // action - home
+    home: async function (req, res) {
+
+        var models = await RealEstate.find({
+            where: { checkbox: { contains: "highlight" } },
+            sort: 'createdAt'
+        });
+        return res.view('estate/home', { estate: models });
+
     },
 
 
