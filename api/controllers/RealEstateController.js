@@ -26,7 +26,8 @@ module.exports = {
 
         var models = await RealEstate.find({
             where: { checkbox: { contains: "highlight" } },
-            sort: 'createdAt'
+            sort: 'createdAt DESC',
+            limit: 4
         });
         return res.view('estate/home', { estate: models });
 
