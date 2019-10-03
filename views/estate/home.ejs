@@ -30,23 +30,14 @@
             <h2 class="card-title"><%= model.title %></h2>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-8 col-sm-7 col-md-7 col-lg-5 col-xl-5">
                     <img src=" <%= model.url %>" class="card-img">
                 </div>
-                <div class="col-md-8">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="col-md-7">
+                    <p class="card-text"><%= model.estate%></p>
+                    <p class="card-text"><%= model.area%></p>
+                    <p class="card-text"><%= model.rent%></p>
                 </div>
-
-                
-                <tr>
-                    <td><%= model.estate %></td>
-                    <td><%= model.area %></td>
-                    <td><%= model.rent %></td>
-                    <td><%= model.bedroom %></td>
-                    <td><%= model.tenant %></td>
-                </tr>
 
             </div>
         </div>
